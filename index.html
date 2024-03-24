@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+
+        .main{
+
+            height:70vh;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+            flex-shrink: 0;
+        }
+
+        .frame{
+    background-image: url(bgabout.jpg);
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    width: 82vw;
+    border: 8px solid #000;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0px #333;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+    .bar{
+        width:80vw;height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+    }
+.parent1{
+        
+        width:80vw;height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    
+        flex-wrap: wrap;
+        flex-shrink: 0;
+
+    }
+    .parent2{
+        width:80vw;height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    .parent3{
+        width:80vw;height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+
+    }
+    .parent4{
+    
+        width:80vw;height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    .parent5{
+    
+        width:80vw;height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    .btn1,.btn2,.btn3,.btn4{
+        border: 2px solid blue;
+        height: 80px;
+        width: 18vw;
+        border-radius: 20px;
+        font-size: 60PX;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+
+    #b1:hover{
+
+        background-color: #555555 ;
+        color: white;
+        transition-duration: 0.4s;
+    }
+
+    #b5:hover{
+        background-color:#008CBA ;
+        color:white;
+        transition-duration: 0.4s;
+}
+
+
+
+.btn1:hover {
+  background-color: #04AA6D;
+  color: white;
+  transition-duration: 0.4s;
+}
+.btn2:hover {
+  background-color: #04AA6D;
+  color: white;
+  transition-duration: 0.4s;
+}
+.btn3:hover {
+  background-color: #04AA6D;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.text1{
+    background-color:coral;
+    border-radius: 20px;
+    text-align:right;
+    width:79vw;height: 10vh;
+    font-size: 100px;
+    border: #fff;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+    
+
+}
+
+
+
+
+   
+
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+    <div class="main">
+        <div class="bar">
+            
+        <input type="text" class="text1" placeholder="0" >
+
+        </div>
+        <div class="parent1"> 
+            <button class="btn1" id="b1">(</button>
+            <button class="btn2"id="b1" >)</button>
+            <button class="btn3" id="b1">%</button>
+            <button class="btn4" id="b5">AC</button>
+        </div>
+        <div class="parent2"> 
+            <button class="btn1" id="b3" type="button" onclick >7</button>
+            <button class="btn2" id="b3">8</button>
+            <button class="btn3" id="b3">9</button>
+            <button class="btn4" id="b1">÷</button>
+        </div>
+        <div class="parent3"> 
+            <button class="btn1" id="b3">4</button>
+            <button class="btn2"  id="b3">5</button>
+            <button class="btn3" id="b3">6</button>
+            <button class="btn4" id="b1">×</button>
+        </div>
+        <div class="parent4"> 
+            <button class="btn1" id="b3">3</button>
+            <button class="btn2" id="b3">2</button>
+            <button class="btn3" id="b3">1</button>
+            <button class="btn4" id="b1">-</button>
+        </div>
+        <div class="parent5"> 
+            <button class="btn1" id="b3">0</button>
+            <button class="btn2" id="b1">.</button>
+            <button class="btn3" id="b5">=</button>
+            <button class="btn4" id="b1">+</button>
+        </div>
+
+   </div>
+   </div>
+    
+</body>
+</html>
